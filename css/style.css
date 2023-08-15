@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  display: grid;
+  place-items: center !important;
+  background: url(https://images.unsplash.com/photo-1534959286102-fe6c1ad3a5dc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTZ8fGxpZ2h0JTIwb3JhbmdlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60) no-repeat fixed center/cover;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+
+.calculator {
+  position: relative;
+  width: 300px;
+  background-color: rgb(243, 156, 57);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+}
+.calculator .calculator__display {
+  background-color: rgba(255, 255, 255, 0.8784313725);
+  height: 140px;
+  width: 100%;
+  overflow-y: scroll;
+  display: grid;
+  place-items: end;
+  align-items: center;
+  word-wrap: break-word;
+  word-break: break-all;
+  padding: 0.75rem 1rem 2rem 1rem;
+  font-size: 2.1rem;
+  font-family: inherit;
+  font-weight: 400;
+}
+.calculator .calculator__display::-webkit-scrollbar {
+  display: none;
+}
+.calculator .calculator__display .display__previous-operand {
+  font-size: 1.5rem;
+  color: rgba(252, 166, 6, 0.774);
+}
+.calculator .calculator__display .display__current-operand {
+  color: rgb(255, 122, 6);
+}
+.calculator img {
+  position: absolute;
+  top: -5rem;
+}
+.calculator .calculator__keys {
+  position: relative;
+  width: 100%;
+  display: grid;
+  gap: 2px;
+  grid-template-columns: repeat(4, auto);
+  padding-top: 2rem;
+}
+.calculator .calculator__keys button {
+  padding: 1rem;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 1.25rem;
+  font-family: inherit;
+  font-weight: 400;
+  color: #fff;
+  cursor: pointer;
+}
+.calculator .calculator__keys button:active {
+  background: rgba(225, 120, 0, 0.207);
+  border-radius: 0.5rem;
+}
+.calculator .calculator__keys [data-equals] {
+  grid-row: span 2;
+  background: rgb(225, 120, 0);
+  -webkit-clip-path: polygon(0 0, 100% 8%, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 8%, 100% 100%, 0% 100%);
+  border-radius: 5px;
+}
+.calculator .calculator__keys [data-equals]:active {
+  background: rgba(225, 120, 0, 0.7);
+  transition: all 0.18s ease;
+}/*# sourceMappingURL=style.css.map */

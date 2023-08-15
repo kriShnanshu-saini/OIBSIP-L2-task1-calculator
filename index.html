@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="./assets/favicon.png"
+            type="image/x-icon"
+        />
+        <title>Calculator</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./css/style.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <div class="calculator">
+                <div class="calculator__display">
+                    <div class="display__previous-operand"></div>
+                    <div class="display__current-operand"></div>
+                </div>
+                <div class="calculator__keys">
+                    <img src="./assets/wave.svg" alt="" />
+                    <button data-all-clear>AC</button>
+                    <button data-delete title="Delete">
+                        <i class="ri-delete-back-2-line"></i>
+                    </button>
+                    <button data-operator>&divide;</button>
+                    <button data-operator>&times;</button>
+                    <button data-number>7</button>
+                    <button data-number>8</button>
+                    <button data-number>9</button>
+                    <button data-operator>-</button>
+                    <button data-number>4</button>
+                    <button data-number>5</button>
+                    <button data-number>6</button>
+                    <button data-operator>+</button>
+                    <button data-number>1</button>
+                    <button data-number>2</button>
+                    <button data-number>3</button>
+                    <button data-equals>=</button>
+                    <button data-operator>%</button>
+                    <button data-number>0</button>
+                    <button data-number>.</button>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
